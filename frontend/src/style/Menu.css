@@ -1,0 +1,222 @@
+.MenuContainer{
+    width: 100%;
+    margin: 0px;
+    padding: 7rem 0px 0px 0px;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+}
+
+
+.CategoryContainer{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ align-items: center ;
+ padding: 0vw 5.5vw;
+}
+
+.CategoryContainer>.tiffins{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 3px dashed rgb(252, 79, 5);
+  width: 16vw;
+  min-width: 250px;
+  height: 30vw;
+  padding: 1rem;
+  border-top-right-radius: 10rem;
+  border-top-left-radius: 10rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: #f4e6e1;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 0.3s ease;
+  margin: 4vw 6.5vw;
+}
+
+.imgholder {
+  width: 80%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dishImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.dishinfo {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.dishname {
+  color: black;
+  font-size: 1.7vw;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  color: #333;
+  font-size: 0.9vw;
+  margin-bottom: 0.5vw;
+}
+
+.price {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.quantityInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.quantity-input {
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1vw;
+}
+
+.increase,
+.decrease {
+  background-color: rgb(252, 79, 5);
+  border: none;
+  border-radius: 6px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2vw;
+  cursor: pointer;
+  color: white;
+}
+
+.increase:disabled,
+.decrease:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.toCart {
+  background-color: #fc4f05;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toCart:hover {
+  background-color: #e04804;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85vw;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .dishImg {
+    height: 160px;
+  }
+
+  .dishname {
+    font-size: 1.4rem;
+  }
+
+  .rating {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .quantity-input {
+    width: 2.5rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .increase,
+  .decrease {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .toCart {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+.skeleton {
+  background-color: #f4e6e1; 
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 16px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton.short {
+  width: 50%;
+}
+
+.skeleton.medium {
+  width: 75%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

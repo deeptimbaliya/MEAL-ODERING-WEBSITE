@@ -1,0 +1,81 @@
+.Tiffinecontainer {
+  margin: 10px 6px;
+  background-color: #f4e6e1;
+  width: 30vw;
+  border-radius: 20px;
+  display: flex;
+}
+
+.dishimgcontainer {
+  border: 1vw dashed rgb(252, 79, 5);
+  width: 15vw;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 30px 10px;
+  overflow: hidden;
+}
+
+.dishImg {
+  width: 11.5vw;
+  height: 11.5vw;
+  margin: 1.3vw;
+}
+
+.dishInfo {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-size: 1.4vw;
+  font-weight: 600;
+
+}
+
+.orderBtn {
+  margin: 2vw;
+  font-size: 1.6vw;
+  color: rgb(252, 79, 5);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.skeleton {
+  background-color: #f4e6e1;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 16px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton.short {
+  width: 50%;
+}
+
+.skeleton.medium {
+  width: 75%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

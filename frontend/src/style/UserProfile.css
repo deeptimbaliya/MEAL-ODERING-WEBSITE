@@ -1,0 +1,177 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 5vw;
+  max-width: 900px;
+  margin:  auto;
+  gap: 2rem;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header h2 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.edit-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #e65c00;
+}
+
+.profile-body label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.profile-body input,
+.profile-body textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.profile-body textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.profile-body p {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.save-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+.order-history{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-history h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emptyorder{
+  min-height: 10rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: rgb(171, 170, 170);
+  font-weight: bold;
+}
+
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-left: 4px solid #ff6600;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.order-card h4 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.order-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-card,
+  .order-card {
+    padding: 1.2rem;
+  }
+
+  .edit-btn,
+  .save-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .orders-list {
+    gap: 0.75rem;
+  }
+}

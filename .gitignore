@@ -1,0 +1,11 @@
+# ignore all env files
+**/.env
+
+# node_modules everywhere
+**/node_modules
+
+# Vite build folder
+frontend/dist
+
+# macOS system file
+.DS_Store
